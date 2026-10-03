@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:shoply/features/products/data/product_model.dart';
-import '../../data/models/product_model.dart';
 import 'product_details_screen.dart';
 
 class ProductsScreen extends StatefulWidget {
@@ -11,14 +10,14 @@ class ProductsScreen extends StatefulWidget {
 }
 
 class _ProductsScreenState extends State<ProductsScreen> {
-  bool isGridView = false; // للتنقل بين العرض الشبكي والعرض القائم
+  bool isGridView = false; 
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color(0xFFF8FAFC),
       appBar: AppBar(
-        backgroundColor: const Color(0xFF1D4ED8), // لون أزرق للـ AppBar
+        backgroundColor: const Color(0xFF1D4ED8), 
         elevation: 0,
         title: const Text(
           'Products',
@@ -51,7 +50,6 @@ class _ProductsScreenState extends State<ProductsScreen> {
     );
   }
 
-  // عرض القائمة (List View) بحجم متناسق وصور مفرغة
   Widget _buildListView() {
     return ListView.builder(
       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
@@ -61,7 +59,7 @@ class _ProductsScreenState extends State<ProductsScreen> {
         return Container(
           margin: const EdgeInsets.only(bottom: 12),
           decoration: BoxDecoration(
-            color: const Color(0xFFF1F5F9), // خلفية الكارد الفاتحة
+            color: const Color(0xFFF1F5F9), 
             borderRadius: BorderRadius.circular(16),
           ),
           child: ListTile(
@@ -115,7 +113,6 @@ class _ProductsScreenState extends State<ProductsScreen> {
     );
   }
 
-  // عرض الشبكة (Grid View)
   Widget _buildGridView() {
     return GridView.builder(
       padding: const EdgeInsets.all(16),

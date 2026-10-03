@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-// استيراد مباشر وبسيط - استبدل كلمة shoply باسم مشروعك إذا كان مختلف
 import 'package:shoply/features/products/presentation/screens/products_screen.dart';
 import 'forgot_password_screen.dart';
 

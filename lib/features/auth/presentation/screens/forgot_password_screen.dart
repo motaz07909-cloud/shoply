@@ -12,7 +12,7 @@ class ForgotPasswordScreen extends StatelessWidget {
       appBar: PreferredSize(
         preferredSize: const Size.fromHeight(60),
         child: Container(
-          color: primaryBlue, // AppBar مستقيم كلياً
+          color: primaryBlue, 
           child: SafeArea(
             child: Row(
               children: [

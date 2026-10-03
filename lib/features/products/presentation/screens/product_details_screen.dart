@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:shoply/features/products/data/product_model.dart';
-import '../../data/models/product_model.dart';
+
 
 
 class ProductDetailsScreen extends StatelessWidget {
@@ -17,7 +17,7 @@ class ProductDetailsScreen extends StatelessWidget {
       appBar: PreferredSize(
         preferredSize: const Size.fromHeight(60),
         child: Container(
-          color: primaryBlue, // AppBar مستقيم بدون حواف دائرية
+          color: primaryBlue, 
           child: SafeArea(
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 8.0),
